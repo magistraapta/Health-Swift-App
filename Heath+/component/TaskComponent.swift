@@ -29,7 +29,16 @@ struct TaskComponent: View {
                 Text("Today at")
                     .bold()
                 Divider()
-                Text("10:00 AM")
+                HStack{
+                    Text("10:00 AM")
+                    Spacer()
+                    Image(systemName: "circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24)
+                        .foregroundColor(.red)
+                }
+                
                 Divider()
             }
             
